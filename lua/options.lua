@@ -5,6 +5,14 @@ require "nvchad.options"
 -- local o = vim.o
 -- o.cursorlineopt ='both' -- to enable cursorline!
 
+require('telescope').setup {
+  defaults = {
+    file_ignore_patterns = {
+      "%.o$",  -- Exclude object files
+      "%.d$",  -- Exclude dependency files
+    },
+  },
+}
 
 
 -- WSL Yank Support

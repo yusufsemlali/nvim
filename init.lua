@@ -25,7 +25,6 @@ local lazy_config = require "configs.lazy"
 -- load plugins
 require("lazy").setup({
   {"NvChad/NvChad", lazy = false, branch = "v2.5", import = "nvchad.plugins",},
-  {"42Paris/42header" , lazy = false},
   {"Pocco81/auto-save.nvim", lazy = false},
   { import = "plugins" },
 }, lazy_config)

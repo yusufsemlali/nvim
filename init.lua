@@ -7,6 +7,9 @@ vim.opt.clipboard = 'unnamedplus'  -- Use the system clipboard
 vim.opt.relativenumber = true
 -- Set relative window 
 vim.o.scrolloff = 999
+-- Disable line wrapping
+vim.opt.wrap = false
+
 
 
 

@@ -10,12 +10,6 @@ map("i", "jk", "<ESC>")
 -- Set Ctrl j to accept Copilot suggestions
 vim.api.nvim_set_keymap('i', '<C-j>', 'copilot#Accept("<CR>")', {expr = true, silent = true})
 
--- Set the new mapping for <Leader>h to run Stdheader in insert mode
-vim.api.nvim_set_keymap('i', '<Leader>h', '<Esc>:Stdheader<CR>:w<CR>a', { noremap = true, silent = true })
-
--- Set the new mapping for <Leader>h to run Stdheader in normal mode
-vim.api.nvim_set_keymap('n', '<Leader>h', ':Stdheader<CR>:w<CR>', { noremap = true, silent = true })
-
 -- Map 'n' in Visual mode to select till the end of the line excluding the newline
 vim.api.nvim_set_keymap('v', 'n', '$', { noremap = true, silent = true })
 

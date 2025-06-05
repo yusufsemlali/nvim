@@ -1,6 +1,6 @@
 require "nvchad.mappings"
 
--- add yours here
+-- add  custom mappings here
 
 local map = vim.keymap.set
 
@@ -12,6 +12,14 @@ vim.api.nvim_set_keymap('i', '<C-j>', 'copilot#Accept("<CR>")', {expr = true, si
 
 -- Map 'n' in Visual mode to select till the end of the line excluding the newline
 vim.api.nvim_set_keymap('v', 'n', '$', { noremap = true, silent = true })
+
+-- ALT + SHIFT + F to manually format the current buffer using conform
+vim.keymap.set("n", "<A-S-F>", function()
+  require("conform").format({ lsp_fallback = true })
+end, { desc = "Format file with Conform" })
+
+-- 'civ' to replace the word under the cursor with clipboard content without overwriting the clipboard
+vim.api.nvim_set_keymap('n', 'civ', '"_yiwviw"+p', { noremap = true, silent = true })
 
 
 

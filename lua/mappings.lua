@@ -21,6 +21,9 @@ end, { desc = "Format file with Conform" })
 -- 'civ' to replace the word under the cursor with clipboard content without overwriting the clipboard
 vim.api.nvim_set_keymap('n', 'civ', '"_yiwviw"+p', { noremap = true, silent = true })
 
+-- Replace the current line with the contents of the system clipboard without affecting other lines
+vim.api.nvim_set_keymap('n', 'cil', '"_dd"+P', { noremap = true, silent = true })
+
 
 
 local map = vim.keymap.set

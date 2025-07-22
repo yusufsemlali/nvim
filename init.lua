@@ -31,6 +31,10 @@ require("lazy").setup({
   { import = "plugins" },
 }, lazy_config)
 
+
+-- Add custom themes directory to runtime path
+vim.opt.rtp:append(vim.fn.stdpath("config") .. "/lua/themes")
+
 -- load theme
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")

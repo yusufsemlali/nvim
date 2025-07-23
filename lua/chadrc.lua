@@ -9,7 +9,8 @@ local M = {}
 
 
 M.base46 = {
-	theme = "gruvbox-inspired",
+	theme = "gruvbox",
+	transparency = true;
 
 	-- hl_override = {
 	-- 	Comment = { italic = true },

@@ -1,6 +1,7 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 vim.opt.clipboard = 'unnamedplus'  -- Use the system clipboard
+vim.opt.fileformats = { "unix", "dos" }
 
 
 -- Set relative line numbers
